@@ -5,11 +5,24 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
+    overflow-y: hidden;
 }
 
 .homepage-ctn {
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+    height: 500vh;
+    /* transform: translateY(-100vh) */
+}
+
+.App {
+    position: relative
+}
+
+.nav-wrapper {
+    position: absolute;
+    width: 3em;
+    height: fit-content;
+    top: 50vh;
+    right: 0;
+    z-index: 10;
+    transform: translate(-50%, -50%)
 }

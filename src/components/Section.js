@@ -3,7 +3,7 @@ import './Section.css'
 
 const Section = (props) => {
 
-    const { children, bg, title, content, textColor, subtitle } = props
+    const { children, bg, title, content, textColor, subtitle, id } = props
 
 
     const styles = {
@@ -11,11 +11,16 @@ const Section = (props) => {
         color: textColor
     }
 
+    const cardStyle = {
+        color: textColor,
+        borderColor: textColor
+    }
+
     return (
-        <div style={styles} className='section-ctn'>
+        <div data-id={id} style={styles} className='section-ctn'>
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
-            <div className='card'>
+            <div className='card' style={cardStyle}>
                 <p>{content}</p>
             </div>
             {children}

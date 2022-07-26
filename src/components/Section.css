@@ -11,9 +11,23 @@
 
 h1 {
     font-size: 6em;
+    text-transform: capitalize;
 }
 
 h2 {
     font-weight: 300;
+    text-transform: capitalize;
 
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 4em;
+    margin-top: 3em;
+    ;
+}
+
+.card p {
+    font-weight: normal;
 }
