@@ -5,14 +5,14 @@ const NavButton = (props) => {
 
     const [active, setActive] = useState(false)
 
-    const { id, pageNumber } = props
+    const { id, pageNumber, navTo } = props
 
     useEffect(() => {
         id === pageNumber ? setActive(true) : setActive(false)
-    })
+    }, [id, pageNumber])
 
     return (
-        <div className={`nav-btn ${active ? 'active' : ''}`}></div>
+        <div className={`nav-btn ${active ? 'active' : ''}`} onClick={() => { navTo(id) }}></div>
     )
 }
 

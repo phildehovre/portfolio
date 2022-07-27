@@ -1,0 +1,36 @@
+export const coloursTheme = {
+    hero: '#084C61',
+    about: '#DB504A',
+    feature1: '#56A3A6',
+    feature2: '#4F6D7A',
+    contact: '',
+    footer: '',
+    extra1: '#B7D3DF',
+    extra2: '#D6EFED',
+    textDark: 'black',
+    textLight: 'white',
+}
+export const pastelTheme = {
+    hero: '#F2D7D9',
+    about: '#D3CEDF',
+    feature1: '#9CB4CC',
+    feature2: '#748DA6',
+    contact: '#898AA6',
+    footer: '#C9BBCF',
+    extra1: '#B7D3DF',
+    extra2: '#D6EFED',
+    textDark: 'black',
+    textLight: 'white',
+}
+export const greyRedTheme = {
+    hero: '#303841',
+    about: '#3A4750',
+    feature1: '#D72323',
+    feature2: '#EEEEEE',
+    contact: 'white',
+    footer: '#EE4540',
+    extra1: '#C72C41',
+    extra2: '#801336',
+    textDark: 'black',
+    textLight: 'white',
+}

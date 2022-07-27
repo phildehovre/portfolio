@@ -4,7 +4,6 @@ import Section from './Section'
 const About = (props) => {
     return (
         <Section {...props}>
-            <div>About</div>
         </Section>
     )
 }

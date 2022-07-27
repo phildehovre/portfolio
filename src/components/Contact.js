@@ -4,7 +4,6 @@ const Contact = (props) => {
 
     return (
         <Section {...props}>
-            <div></div>
         </Section>
     )
 }

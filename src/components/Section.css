@@ -15,19 +15,30 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
+    font-size: 1.8em;
+    font-weight: 200;
+    letter-spacing: .1em;
     text-transform: capitalize;
-
+    padding: 2em
 }
 
 .card {
+    list-style: none;
     border: 1px solid;
     border-radius: 6px;
-    padding: 4em;
+    padding: 2.5em;
     margin-top: 3em;
-    ;
 }
 
-.card p {
+.card li {
+    font-size: 1.2em;
     font-weight: normal;
+    padding: .4em 0;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+
 }
