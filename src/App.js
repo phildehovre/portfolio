@@ -9,10 +9,13 @@ function App() {
 
   const [translationFactor, setTranslationFactor] = useState(0)
 
+  // Add 1 to numberOfSections when adding a new setion.
+  const [numberOfSections, setNumberOfSections] = useState(4)
+
   window.addEventListener('wheel', (e) => {
 
     if (e.deltaY > 0) {
-      if (translationFactor < 4) {
+      if (translationFactor < numberOfSections) {
         setTranslationFactor(translationFactor + 1)
       }
     } else {

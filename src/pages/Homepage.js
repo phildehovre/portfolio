@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
@@ -9,10 +9,8 @@ const Homepage = (props) => {
 
     const { factorY } = props
     // const { hero, about, feature1, feature2, contact, footer } = pastelTheme
-    const { hero, about, feature1, feature2, contact,
-        // footer, 
-        // textDark, 
-        textLight } = coloursTheme
+    const { hero, about, feature1, feature2, extra1, textLight, extra2 } = coloursTheme
+
 
 
     const style = {
@@ -58,7 +56,7 @@ const Homepage = (props) => {
                     },
                     {
                         content: 'MyMetronome app',
-                        url: ''
+                        url: 'http://metronomeapp.vercel.app'
                     },
                 ]}
                 textColor=''
@@ -74,7 +72,7 @@ const Homepage = (props) => {
                 id={3}
             />
             <Contact
-                bg={contact}
+                bg={extra1}
                 title=''
                 content=''
                 textColor=''
