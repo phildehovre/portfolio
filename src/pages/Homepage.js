@@ -18,9 +18,6 @@ const Homepage = (props) => {
         transform: `translate3d(0px, ${-100 * factorY}vh, 0px)`
     }
 
-    useEffect(() => {
-    }, [])
-
 
 
 

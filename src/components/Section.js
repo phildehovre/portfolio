@@ -10,9 +10,11 @@ const Section = (props) => {
         if (content[0].content) {
             return content.map((item, index) => {
                 return (
-                    <li>
+                    <li
+                        key={index}
+
+                    >
                         <a
-                            key={index}
                             href={item.url}
                             target='_blank'
                             rel="noreferrer"
@@ -23,6 +25,7 @@ const Section = (props) => {
                 )
             })
         }
+
 
         return content.map((item, index) => {
             return (

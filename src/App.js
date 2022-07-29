@@ -1,22 +1,24 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Homepage from "./pages/Homepage";
 import Nav from "./components/Nav";
 import './styles/global.css'
 import NavButton from './components/NavButton';
 import Modal from './components/Modal'
 import { coloursTheme } from './styles/themes';
+import Hammer from 'hammerjs';
 
 function App() {
 
   const [translationFactor, setTranslationFactor] = useState(0)
-  const [open, setOpen] = useState(false)
-
-  // Add 1 to numberOfSections when adding a new setion.
   const [numberOfSections, setNumberOfSections] = useState(4)
+  const [open, setOpen] = useState(false)
+  const [touchstartY, setTouchstartY] = useState(0)
+  const [touchendY, setTouchendY] = useState(0)
+
 
   window.addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
-      if (translationFactor < numberOfSections) {
+      if (translationFactor <= numberOfSections) {
         setTranslationFactor(translationFactor + 1)
       }
     } else {
@@ -26,31 +28,9 @@ function App() {
     }
   })
 
-  let touchstartY = 0
-  let touchendY = 0
 
-  function checkDirection() {
-    if (touchendY < touchstartY) {
-      if (translationFactor < numberOfSections) {
-        setTranslationFactor(translationFactor + 1)
-      }
-    }
-    if (touchendY > touchstartY) {
-      if (translationFactor > 0) {
-        setTranslationFactor(translationFactor - 1)
-      }
-    }
-  }
 
-  document.addEventListener('touchstart', e => {
-    touchstartY = e.changedTouches[0].screenY
-  })
-
-  document.addEventListener('touchend', e => {
-    touchendY = e.changedTouches[0].screenY
-    checkDirection()
-  })
-
+  console.log(touchstartY)
   const handleManualTranslation = (id) => {
     setTranslationFactor(id)
   }
