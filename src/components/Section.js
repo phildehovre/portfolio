@@ -1,5 +1,6 @@
 import React from 'react'
 import './Section.css'
+import WaterAnimation from './WaterAnimation'
 
 const Section = (props) => {
 
@@ -52,7 +53,11 @@ const Section = (props) => {
 
     return (
         <div data-id={id} style={styles} className='section-ctn'>
-            <h1>{title}</h1>
+            <h1 style={{ overflow: 'visible' }}>{title}
+                {id === 0 && <span className='dot' style={{ position: 'relative' }}>.
+                    <WaterAnimation />
+                </span>}
+            </h1>
             {subtitle && <h2>{subtitle}</h2>}
             {content && <div className='card' style={cardStyle}>
                 {renderContent()}

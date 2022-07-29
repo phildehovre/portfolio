@@ -47,3 +47,18 @@ a {
     color: inherit;
 
 }
+
+.dot {
+    animation: fall 1000ms ease-in infinite;
+}
+
+
+@keyframes fall {
+    from {
+        transform: translateY(-100vh)
+    }
+
+    to {
+        transform: translateY(0vh)
+    }
+}

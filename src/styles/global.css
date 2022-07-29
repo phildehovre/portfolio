@@ -5,7 +5,7 @@
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
     font-weight: 900;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .homepage-ctn {
@@ -14,7 +14,8 @@
 }
 
 .App {
-    position: relative
+    position: relative;
+
 }
 
 .nav-wrapper {

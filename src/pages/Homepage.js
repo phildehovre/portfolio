@@ -25,7 +25,7 @@ const Homepage = (props) => {
         <div className='homepage-ctn' id='fullpage' style={style}>
             <Hero
                 bg={hero}
-                title='Philippe De Hovre.'
+                title='Philippe De Hovre'
                 subtitle='Junior software developer'
                 textColor={textDark}
                 id={0}

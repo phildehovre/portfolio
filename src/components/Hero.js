@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './Section'
 import './Hero.css'
+// import WaterAnimation from './WaterAnimation'
 
 const Hero = (props) => {
 
@@ -17,6 +18,7 @@ const Hero = (props) => {
 
     return (
         <Section {...props}>
+            {/* <WaterAnimation /> */}
             <div id='swipe-instructions' style={buttonStyle}>Scroll down or swipe up
                 <div id='swipe-btn' style={swipeStyle}></div>
             </div>

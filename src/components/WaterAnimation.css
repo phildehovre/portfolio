@@ -1,0 +1,30 @@
+.water-ctn {
+    position: absolute;
+    height: 2em;
+    width: 2em;
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    top: 0px;
+    left: -50px;
+    z-index: 100;
+    animation: scale 1500ms ease-out;
+    /* animation-delay: 1000ms; */
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0%)
+            /* perspective(800px) rotateX(80deg) */
+        ;
+        border: 1px solid rgb(0, 0, 0);
+        opacity: 1
+    }
+
+    to {
+        transform: scale(400%)
+            /* perspective(800px) rotateX(80deg) */
+        ;
+        border: 1px solid rgb(0, 0, 0);
+        opacity: 0
+    }
+}
