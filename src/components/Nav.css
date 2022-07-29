@@ -1,0 +1,29 @@
+.nav-ctn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    height: 2em;
+    width: 33%;
+    top: 0;
+    right: 0;
+    z-index: 1
+}
+
+.nav-ctn>ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-ctn>ul>li {
+    border-bottom: none;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+}
+
+.nav-ctn>ul>li:hover,
+.nav-ctn>ul>li:active {
+    border-bottom: 2px solid white;
+}

@@ -1,6 +1,46 @@
 .modal-ctn {
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.24);
+    z-index: 1000;
+}
+
+.content-ctn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    height: 95vh;
+    width: 95vw;
+    background-color: rgba(0, 0, 0, 0.24)
+}
+
+.resume {
+    background-image: url('https://res.cloudinary.com/dtnif6mzm/image/upload/v1659014929/Portfolio%20-%202022/Philippe_De_Hovre_-Resume_-_July2022_hht70l.png');
+    background-size: 119%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 30%;
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+.download {
+    position: absolute;
+    background-color: white;
+    padding: .5em;
+    height: 2.5em;
+    width: 40%;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    /* z-index: 1500; */
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

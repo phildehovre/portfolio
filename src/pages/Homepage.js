@@ -3,13 +3,13 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Links from '../components/Links'
-import { coloursTheme } from '../styles/themes'
+import { greenYellowTheme } from '../styles/themes'
 
 const Homepage = (props) => {
 
-    const { factorY } = props
-    // const { hero, about, feature1, feature2, contact, footer } = pastelTheme
-    const { hero, about, feature1, feature2, extra1, textLight, extra2 } = coloursTheme
+    const { factorY, openModal, offset } = props
+    // const { hero, about, feature1, feature2, contact, footer } = greenYellowTheme
+    const { hero, about, feature1, feature2, extra1, textLight, textDark, extra2 } = greenYellowTheme
 
 
 
@@ -19,8 +19,9 @@ const Homepage = (props) => {
     }
 
     useEffect(() => {
-        console.log('load')
     }, [])
+
+
 
 
     return (
@@ -29,7 +30,7 @@ const Homepage = (props) => {
                 bg={hero}
                 title='Philippe De Hovre.'
                 subtitle='Junior software developer'
-                textColor={textLight}
+                textColor={textDark}
                 id={0}
                 content=''
             />
@@ -45,6 +46,7 @@ const Homepage = (props) => {
                     'English, French, Dutch, Spanish',
                     'Professional touring musician',
                 ]}
+                openModal={openModal}
             />
             <About
                 bg={feature1}
@@ -65,7 +67,7 @@ const Homepage = (props) => {
             />
             <Links
                 bg={feature2}
-                title=''
+                title='Links'
                 content=''
                 textColor=''
                 className='section'

@@ -7,11 +7,14 @@
     font-size: 1em;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    padding: 1.5em;
+    text-align: center;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 4em;
     text-transform: capitalize;
+    text-align: center;
 }
 
 h2 {
@@ -28,6 +31,8 @@ h2 {
     border-radius: 6px;
     padding: 2.5em;
     margin-top: 3em;
+    width: 100%;
+    max-width: 400px;
 }
 
 .card li {

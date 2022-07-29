@@ -3,13 +3,7 @@ import './Section.css'
 
 const Section = (props) => {
 
-    const { children, bg, title, content, textColor, subtitle, id } = props
-
-
-
-
-    console.log(title, Object.keys(content).length > 0)
-    console.log(title, Object.keys(content))
+    const { children, bg, title, content, textColor, subtitle, id, offset } = props
 
     function renderContent() {
         if (typeof content === 'string') return content
@@ -40,7 +34,8 @@ const Section = (props) => {
 
     const styles = {
         backgroundColor: bg,
-        color: textColor
+        color: textColor,
+        marginTop: `-${offset}`
     }
 
     const cardStyle = {

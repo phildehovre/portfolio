@@ -34,3 +34,15 @@ export const greyRedTheme = {
     textDark: 'black',
     textLight: 'white',
 }
+export const greenYellowTheme = {
+    hero: '#F5F0BB',
+    about: '#C4DFAA',
+    feature1: '#90C8AC',
+    feature2: '#73A9AD',
+    contact: '#355764',
+    footer: '#5A8F7B',
+    extra1: '#81CACF',
+    extra2: '#81CACF',
+    textDark: 'black',
+    textLight: 'white',
+}

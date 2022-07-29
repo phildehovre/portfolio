@@ -3,9 +3,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Inter', sans-serif; */
     font-family: Helvetica, sans-serif;
-    /* letter-spacing: 0.1em; */
     font-weight: 900;
     overflow-y: hidden;
 }
@@ -21,7 +19,7 @@
 
 .nav-wrapper {
     position: absolute;
-    width: 1em;
+    width: .7em;
     height: fit-content;
     top: 50vh;
     right: 0;
