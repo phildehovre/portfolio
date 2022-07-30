@@ -29,6 +29,17 @@ const Section = (props) => {
 
 
         return content.map((item, index) => {
+            if (item.includes('email')) {
+                return (
+                    <li key={index}>
+                        <a id='email' mailto='ph.dehovre@gmail.com'>
+                            {item}
+                        </a>
+                    </li>
+                )
+            }
+
+
             return (
                 <li key={index}>{item}</li>
             )

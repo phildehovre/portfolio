@@ -43,9 +43,10 @@ const Homepage = (props) => {
                 id={1}
                 content={[
                     'React.js software developer',
-                    'Human Ressources graduate',
+                    'Webdesigner',
+                    'UI/UX',
                     'English, French, Dutch, Spanish',
-                    'Professional touring musician',
+                    'Musician',
                 ]}
                 openModal={openModal}
             />
