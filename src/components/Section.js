@@ -72,7 +72,7 @@ const Section = (props) => {
             {subtitle && <h2>{subtitle}</h2>}
             {content && <div className='card' style={cardStyle}>
                 {renderContent()}
-                <div className='additionnal'>{additionnal}</div>
+                {additionnal && <div className='additionnal'>{additionnal}</div>}
 
             </div>}
             {children}
