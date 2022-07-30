@@ -17,9 +17,10 @@ const About = (props) => {
 
     return (
         <Section {...props}>
-            {title === 'About me' && <div className='download-btn' style={btnStyle}
-                onClick={() => { openModal() }}
-            >View my CV</div>}
+            {title === 'About me' &&
+                <a className='download' target='_blank' href='https://res.cloudinary.com/dtnif6mzm/image/upload/v1659014929/Portfolio%20-%202022/Philippe_De_Hovre_-Resume_-_July2022_hht70l.png'>
+                    <p>View my CV</p></a>
+            }
         </Section>
     )
 }

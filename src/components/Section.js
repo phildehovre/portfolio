@@ -62,6 +62,7 @@ const Section = (props) => {
             {content && <div className='card' style={cardStyle}>
                 {renderContent()}
                 <div className='additionnal'>{additionnal}</div>
+
             </div>}
             {children}
         </div>

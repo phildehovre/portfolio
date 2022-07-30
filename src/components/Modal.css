@@ -30,7 +30,7 @@
     position: relative
 }
 
-.download {
+/* .download {
     position: absolute;
     background-color: white;
     padding: .5em;
@@ -39,8 +39,8 @@
     text-align: center;
     border-radius: 6px;
     font-weight: 600;
-    /* z-index: 1500; */
+    z-index: 1500;
     top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
