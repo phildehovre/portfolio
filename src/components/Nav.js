@@ -3,7 +3,7 @@ import './Nav.css'
 
 const Nav = (props) => {
 
-    const { theme, navbarHeight, factorY } = props
+    const { theme, navbarHeight, factorY, navTo } = props
 
     const navStyle = {
         color: theme.textDark,
@@ -15,7 +15,7 @@ const Nav = (props) => {
     const renderNav = () => {
         return nav.map((item, index) => {
             return (
-                <li key={index} className={`navItem ${factorY === index ? 'active' : ''}`}>{item}</li>
+                <li onClick={() => { navTo(index) }} key={index} className={`navItem ${factorY === index ? 'active' : ''}`}>{item}</li>
             )
         })
     }

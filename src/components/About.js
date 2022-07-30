@@ -18,7 +18,7 @@ const About = (props) => {
     return (
         <Section {...props}>
             {title === 'About me' &&
-                <a className='download' target='_blank' href='https://res.cloudinary.com/dtnif6mzm/image/upload/v1659014929/Portfolio%20-%202022/Philippe_De_Hovre_-Resume_-_July2022_hht70l.png'>
+                <a className='download' target='_blank' href='https://res.cloudinary.com/dtnif6mzm/image/upload/v1659179306/Portfolio%20-%202022/Philippe_De_Hovre_-_Resume_2022_1_mihtu5.png'>
                     <p>View my CV</p></a>
             }
         </Section>
