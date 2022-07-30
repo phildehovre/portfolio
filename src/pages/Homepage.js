@@ -70,11 +70,12 @@ const Homepage = (props) => {
                 bg={extra1}
                 title='Contact'
                 content={[
-                    'E-mail: ph.dehovre@gmail.com',
-                    'Phone: 07907318221',
+                    'email: ph.dehovre@gmail.com',
+                    'Phone: +44(0)7907318221',
                 ]}
                 textColor=''
                 className='section'
+                additionnal='This website does not collect cookies or any personal information.'
                 id={4}
             />
             <Links

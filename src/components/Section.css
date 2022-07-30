@@ -36,7 +36,7 @@ h2 {
 }
 
 .card li {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
     padding: .4em 0;
     text-transform: capitalize;
@@ -52,6 +52,12 @@ a {
     animation: fall 1000ms ease-in infinite;
 }
 
+
+.additionnal {
+    padding: 1em 0 0 0;
+    font-weight: lighter;
+    font-size: .75em;
+}
 
 @keyframes fall {
     from {

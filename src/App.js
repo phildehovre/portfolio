@@ -10,7 +10,7 @@ import { useSwipeable } from 'react-swipeable'
 function App() {
 
   const [translationFactor, setTranslationFactor] = useState(0)
-  const [numberOfSections, setNumberOfSections] = useState(4)
+  const [numberOfSections, setNumberOfSections] = useState(3)
   const [open, setOpen] = useState(false)
 
 
@@ -50,6 +50,7 @@ function App() {
     setOpen(!open)
   }
 
+
   return (
     <div className="App"
       {...handlers}
@@ -60,7 +61,7 @@ function App() {
         <NavButton id={1} pageNumber={translationFactor} navTo={handleManualTranslation} />
         <NavButton id={2} pageNumber={translationFactor} navTo={handleManualTranslation} />
         <NavButton id={3} pageNumber={translationFactor} navTo={handleManualTranslation} />
-        <NavButton id={4} pageNumber={translationFactor} navTo={handleManualTranslation} />
+        {/* <NavButton id={4} pageNumber={translationFactor} navTo={handleManualTranslation} /> */}
       </div>
       <Homepage
         factorY={translationFactor}

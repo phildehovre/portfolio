@@ -4,7 +4,7 @@ import WaterAnimation from './WaterAnimation'
 
 const Section = (props) => {
 
-    const { children, bg, title, content, textColor, subtitle, id, offset } = props
+    const { children, bg, title, content, textColor, subtitle, id, offset, additionnal } = props
 
     function renderContent() {
         if (typeof content === 'string') return content
@@ -61,6 +61,7 @@ const Section = (props) => {
             {subtitle && <h2>{subtitle}</h2>}
             {content && <div className='card' style={cardStyle}>
                 {renderContent()}
+                <div className='additionnal'>{additionnal}</div>
             </div>}
             {children}
         </div>
