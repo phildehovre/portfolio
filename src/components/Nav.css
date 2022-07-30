@@ -1,29 +1,32 @@
 .nav-ctn {
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
     position: absolute;
     height: 2em;
-    width: 33%;
+    width: 100%;
     top: 0;
     right: 0;
-    z-index: 1
+    z-index: 1;
 }
 
 .nav-ctn>ul {
     display: flex;
     width: 100%;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0;
 }
 
-.nav-ctn>ul>li {
-    border-bottom: none;
-    transition: all 350ms ease-in-out;
+.nav-ctn>ul>.navItem {
+    transition: all 250ms ease-in-out;
     cursor: pointer;
+    font-size: .9em;
+}
+
+.nav-ctn>ul>.navItem.active {
+    border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .nav-ctn>ul>li:hover,
 .nav-ctn>ul>li:active {
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid rgb(0, 0, 0);
 }

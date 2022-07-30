@@ -54,7 +54,7 @@ const Section = (props) => {
     return (
         <div data-id={id} style={styles} className='section-ctn'>
             <h1 style={{ overflow: 'visible' }}>{title}
-                {id === 0 && <span className='dot' style={{ position: 'relative' }}>.
+                {id === 0 && <span className='dot' style={{ position: 'relative' }}>
                     <WaterAnimation />
                 </span>}
             </h1>

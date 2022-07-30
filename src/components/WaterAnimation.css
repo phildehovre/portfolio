@@ -11,19 +11,26 @@
     /* animation-delay: 1000ms; */
 }
 
+/* .water-ctn::before {
+    content: '';
+    height: .5em;
+    width: .5em;
+    background-color: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 100%;
+} */
+
 @keyframes scale {
     from {
-        transform: scale(0%)
-            /* perspective(800px) rotateX(80deg) */
-        ;
+        transform: scale(0%);
         border: 1px solid rgb(0, 0, 0);
         opacity: 1
     }
 
     to {
-        transform: scale(400%)
-            /* perspective(800px) rotateX(80deg) */
-        ;
+        transform: scale(400%);
         border: 1px solid rgb(0, 0, 0);
         opacity: 0
     }

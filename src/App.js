@@ -54,7 +54,7 @@ function App() {
     <div className="App"
       {...handlers}
     >
-      <Nav theme={coloursTheme} />
+      <Nav theme={coloursTheme} factorY={translationFactor} />
       <div className='nav-wrapper'>
         <NavButton id={0} pageNumber={translationFactor} navTo={handleManualTranslation} />
         <NavButton id={1} pageNumber={translationFactor} navTo={handleManualTranslation} />

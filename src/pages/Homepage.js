@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
@@ -7,9 +7,13 @@ import { greenYellowTheme } from '../styles/themes'
 
 const Homepage = (props) => {
 
-    const { factorY, openModal, offset } = props
-    // const { hero, about, feature1, feature2, contact, footer } = greenYellowTheme
-    const { hero, about, feature1, feature2, extra1, textLight, textDark, extra2 } = greenYellowTheme
+    const { factorY, openModal } = props
+    const {
+        // textLight,
+        // extra2
+        hero, about, feature1, feature2, extra1,
+        textDark,
+    } = greenYellowTheme
 
 
 
@@ -62,21 +66,24 @@ const Homepage = (props) => {
                 className='section'
                 id={2}
             />
-            <Links
-                bg={feature2}
-                title='Links'
-                content=''
-                textColor=''
-                className='section'
-                id={3}
-            />
             <Contact
                 bg={extra1}
-                title=''
-                content=''
+                title='Contact'
+                content={[
+                    'E-mail: ph.dehovre@gmail.com',
+                    'Phone: 07907318221',
+                ]}
                 textColor=''
                 className='section'
                 id={4}
+            />
+            <Links
+                bg={feature2}
+                title='Thank you'
+                content='This website does not collect cookies or any personal information.'
+                textColor=''
+                className='section'
+                id={3}
             />
         </div>
     )
