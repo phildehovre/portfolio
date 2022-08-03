@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import './Section.css'
 import WaterAnimation from './WaterAnimation'
+import { gsap } from 'gsap'
 
 const Section = (props) => {
 
     const { children, bg, title, content, textColor, subtitle, id, offset, additionnal } = props
+
+    useLayoutEffect(() => {
+        gsap.fromTo(".card",
+            { opacity: 0, y: '10%' },
+            { opacity: 1, y: '0', duration: .8, delay: .2 },
+        )
+    })
+
 
     function renderContent() {
         if (typeof content === 'string') return content
