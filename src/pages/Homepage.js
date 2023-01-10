@@ -3,17 +3,17 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Links from '../components/Links'
-import { greenYellowTheme } from '../styles/themes'
+import { greyRedTheme } from '../styles/themes'
 
 const Homepage = (props) => {
 
     const { factorY, openModal } = props
     const {
-        // textLight,
+        textLight,
         // extra2
         hero, about, feature1, feature2, extra1,
         textDark,
-    } = greenYellowTheme
+    } = greyRedTheme
 
 
 
@@ -22,23 +22,20 @@ const Homepage = (props) => {
         transform: `translate3d(0px, ${-100 * factorY}vh, 0px)`
     }
 
-
-
-
     return (
         <div className='homepage-ctn' id='fullpage' style={style}>
             <Hero
                 bg={hero}
                 title='Philippe De Hovre'
                 subtitle='Junior software developer'
-                textColor={textDark}
+                textColor={textLight}
                 id={0}
                 content=''
             />
             <About
                 bg={about}
                 title='About me'
-                textColor=''
+                textColor={textLight}
                 className='section'
                 id={1}
                 content={[
@@ -54,6 +51,10 @@ const Homepage = (props) => {
                 bg={feature1}
                 title='My work'
                 content={[
+                    {
+                        content: 'MyFy Finance/News app',
+                        url: 'https://myfy-v3.vercel.app/'
+                    },
                     {
                         content: 'Bedmar Music',
                         url: 'http://bedmarmusic.co.uk'

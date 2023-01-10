@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import './Section.css'
 import WaterAnimation from './WaterAnimation'
 import { gsap } from 'gsap'
@@ -41,7 +41,7 @@ const Section = (props) => {
             if (item.includes('email')) {
                 return (
                     <li key={index}>
-                        <a id='email' mailto='ph.dehovre@gmail.com'>
+                        <a id='email' href='/' mailto='ph.dehovre@gmail.com'>
                             {item}
                         </a>
                     </li>
