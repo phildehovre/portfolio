@@ -3,7 +3,8 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
 import Links from '../components/Links'
-import { greyRedTheme } from '../styles/themes'
+// import { greyRedTheme as theme } from '../styles/themes'
+import { pastelTheme as theme } from '../styles/themes'
 
 const Homepage = (props) => {
 
@@ -11,9 +12,13 @@ const Homepage = (props) => {
     const {
         textLight,
         // extra2
-        hero, about, feature1, feature2, extra1,
+        hero,
+        about,
+        feature1,
+        feature2,
+        extra1,
         textDark,
-    } = greyRedTheme
+    } = theme
 
 
 
@@ -28,14 +33,14 @@ const Homepage = (props) => {
                 bg={hero}
                 title='Philippe De Hovre'
                 subtitle='Junior software developer'
-                textColor={textLight}
+                textColor={textDark}
                 id={0}
                 content=''
             />
             <About
                 bg={about}
                 title='About me'
-                textColor={textLight}
+                textColor={textDark}
                 className='section'
                 id={1}
                 content={[

@@ -9,8 +9,8 @@ const Section = (props) => {
 
     useLayoutEffect(() => {
         gsap.fromTo(".card",
-            { opacity: 0, y: '10%' },
-            { opacity: 1, y: '0', duration: .8, delay: .2 },
+            { opacity: 0, x: '-100%' },
+            { opacity: 1, x: '0', duration: .5, delay: .2 },
         )
     })
 
