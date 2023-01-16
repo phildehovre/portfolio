@@ -50,6 +50,7 @@ const Homepage = (props) => {
                     'English, French, Dutch, Spanish',
                     'Musician',
                 ]}
+                linkToResume='https://res.cloudinary.com/dtnif6mzm/image/upload/v1673882874/Portfolio%20-%202022/Philippe_De_Hovre_-_Resume_2023_hyk0x0.png'
                 openModal={openModal}
             />
             <About
