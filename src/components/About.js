@@ -9,6 +9,7 @@ const About = (props) => {
         title,
         // openModal,
         textColor,
+        linkToResume
     } = props
 
     const btnStyle = {
@@ -24,7 +25,7 @@ const About = (props) => {
     return (
         <Section {...props}>
             {title === 'About me' &&
-                <a className='download' style={btnStyle} rel='noreferrer' target='_blank' href='https://res.cloudinary.com/dtnif6mzm/image/upload/v1659179306/Portfolio%20-%202022/Philippe_De_Hovre_-_Resume_2022_1_mihtu5.png'>
+                <a className='download' style={btnStyle} rel='noreferrer' target='_blank' href={linkToResume}>
                     <p>View my CV</p></a>
             }
         </Section>
