@@ -41,7 +41,7 @@ const Section = (props) => {
                         >
                             {item.content.title}
                         </a>
-                        <p>{item.content.details}</p>
+                        <p style={{fontWeigjht: 'normal'}}>{item.content.details}</p>
                     </li>
                 )
             })
