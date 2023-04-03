@@ -58,23 +58,19 @@ const Homepage = (props) => {
                 title='My work'
                 content={[
                     {
-                        content: 'Goodles, a Google Calendar integrated to-do list',
+                        content: { title: 'Goodles', details: 'a Google Calendar integrated to-do list' },
                         url: 'https://goodles.vercel.app/#'
                     },
                     {
-                        content: 'MyFy Finance/News app',
+                        content: { title: 'MyFy', details: 'Finance/News app' },
                         url: 'https://myfy-v3.vercel.app/'
                     },
                     {
-                        content: 'MyFy Finance/News app',
-                        url: 'https://myfy-v3.vercel.app/'
-                    },
-                    {
-                        content: 'Bedmar Music',
+                        content: { title: 'Bedmar Music', detail: 'Website for a music management company' },
                         url: 'http://bedmarmusic.co.uk'
                     },
                     {
-                        content: 'MyMetronome app',
+                        content: { title: 'MyMetronome app', details: 'Tempo finder for building plylists or for DJing' },
                         url: 'http://metronomeapp.vercel.app'
                     },
                 ]}

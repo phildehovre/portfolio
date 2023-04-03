@@ -39,8 +39,9 @@ const Section = (props) => {
                             target='_blank'
                             rel="noreferrer"
                         >
-                            {item.content}
+                            {item.content.title}
                         </a>
+                        <p>{item.content.details}</p>
                     </li>
                 )
             })
