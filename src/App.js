@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Homepage from "./pages/Homepage";
 import Nav from "./components/Nav";
 import './styles/global.css'
@@ -13,6 +13,27 @@ function App() {
   const [numberOfSections, setNumberOfSections] = useState(3)
   const [open, setOpen] = useState(false)
 
+
+  // document.addEventListener('wheel', (e) => {
+  //   console.log(e.deltaY)
+  //   if (detectTrackPad(e)) {
+  //     if (e.deltaY < 0) {
+  //       if (translationFactor < numberOfSections) {
+  //         setTranslationFactor(translationFactor - 1)
+  //       }
+  //     }
+  //     if (e.deltaY > 0) {
+  //       if (translationFactor > 0) {
+  //         setTranslationFactor(translationFactor + 1)
+  //       }
+  //     }
+  //   }
+  // })
+
+  document.addEventListener('touchmove', (e) => {
+    console.log(e)
+  })
+  // console.log('factor', translationFactor)
 
   window.addEventListener('wheel', (e) => {
     if (e.deltaY > 0) {
@@ -39,6 +60,22 @@ function App() {
       }
     },
   });
+
+  function detectTrackPad(e) {
+    var isTrackpad = false;
+    if (e.deltaY) {
+      if (Math.abs(e.deltaY) !== 100) {
+        isTrackpad = true;
+      }
+    }
+    else if (e.deltaMode === 0) {
+      isTrackpad = true;
+    }
+    return isTrackpad
+  }
+
+  document.addEventListener("mousewheel", detectTrackPad, false);
+  document.addEventListener("DOMMouseScroll", detectTrackPad, false);
 
 
   const handleManualTranslation = (id) => {

@@ -58,6 +58,14 @@ const Homepage = (props) => {
                 title='My work'
                 content={[
                     {
+                        content: 'Goodles, a Google Calendar integrated to-do list',
+                        url: 'https://goodles.vercel.app/#'
+                    },
+                    {
+                        content: 'MyFy Finance/News app',
+                        url: 'https://myfy-v3.vercel.app/'
+                    },
+                    {
                         content: 'MyFy Finance/News app',
                         url: 'https://myfy-v3.vercel.app/'
                     },
