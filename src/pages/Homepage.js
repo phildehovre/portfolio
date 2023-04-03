@@ -66,7 +66,7 @@ const Homepage = (props) => {
                         url: 'https://myfy-v3.vercel.app/'
                     },
                     {
-                        content: { title: 'Bedmar Music', detail: 'Website for a music management company' },
+                        content: { title: 'Bedmar Music', details: 'Website for a music management company' },
                         url: 'http://bedmarmusic.co.uk'
                     },
                     {
