@@ -32,7 +32,7 @@ const Homepage = (props) => {
             <Hero
                 bg={hero}
                 title='Philippe De Hovre'
-                subtitle='Junior software developer'
+                subtitle='React developer'
                 textColor={textDark}
                 id={0}
                 content=''
