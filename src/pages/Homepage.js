@@ -45,7 +45,7 @@ const Homepage = (props) => {
                 id={1}
                 content={[
                     'React.js software developer',
-                    'Webdesigner',
+                    'Web Developer',
                     'UI/UX',
                     'English, French, Dutch, Spanish',
                     'Musician',
