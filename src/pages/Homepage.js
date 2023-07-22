@@ -69,10 +69,10 @@ const Homepage = (props) => {
                         content: { title: 'MyMetronome app', details: 'Tempo finder for building playlists or for DJing' },
                         url: 'http://metronomeapp.vercel.app'
                     },
-                    // {
-                    //     content: { title: 'Goodles', details: 'a Google Calendar integrated to-do list' },
-                    //     url: 'https://goodles.vercel.app/#'
-                    // },
+                    {
+                        content: { title: 'Goodles', details: 'a Google Calendar integrated to-do list' },
+                        url: 'https://goodles.vercel.app/#'
+                    },
                 ]}
                 textColor=''
                 className='section'
