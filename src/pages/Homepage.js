@@ -66,7 +66,7 @@ const Homepage = (props) => {
                         url: 'http://bedmarmusic.co.uk'
                     },
                     {
-                        content: { title: 'MyMetronome app', details: 'Tempo finder for building plylists or for DJing' },
+                        content: { title: 'MyMetronome app', details: 'Tempo finder for building playlists or for DJing' },
                         url: 'http://metronomeapp.vercel.app'
                     },
                     // {
