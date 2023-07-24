@@ -50,7 +50,7 @@ const Homepage = (props) => {
                     'English, French, Dutch, Spanish',
                     'Musician',
                 ]}
-                linkToResume='https://res.cloudinary.com/dtnif6mzm/image/upload/v1690197398/Philippe_De_Hovre_-_Resume_-_Aug_2023_npsqpq.png'
+                linkToResume='https://res.cloudinary.com/dtnif6mzm/image/upload/v1690199385/Philippe_De_Hovre_-_Resume_-_Aug_2023_rwxgyp.png'
                 openModal={openModal}
             />
             <About
