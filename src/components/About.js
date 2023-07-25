@@ -25,7 +25,7 @@ const About = (props) => {
     return (
         <Section {...props}>
             {title === 'About me' &&
-                <a className='download' style={btnStyle} rel='noreferrer' target='_blank' href={linkToResume}>
+                <a className='download' style={btnStyle} rel='noreferrer' target='_blank' href='https://drive.google.com/file/d/1NfN9R0HJ6gS2m4DMC4DOCAU2261c1Hrq/view?usp=sharing' download>
                     <p>View my CV</p></a>
             }
         </Section>
